@@ -530,31 +530,28 @@
                         </div>
                         <div class="space-y-1">
                             <label class="text-xs font-medium text-muted px-1">
-                                                    <form action="https://formspree.io/f/xbdqyrzg" method="POST">
-                                <span class="lang-en">Email</span>
-                                <span class="lang-ar">البريد الإلكتروني</span>
-                            </label>
-<input type="email" name="email" class="..." placeholder="john@example.com">
-                        </div>
-                        <div class="space-y-1">
-                            <label class="text-xs font-medium text-muted px-1">
-                                <span class="lang-en">Message</span>
-                                <span class="lang-ar">الرسالة</span>
-                            </label>
-                            <textarea rows="4" class="w-full glass-input px-4 py-3 rounded-xl text-sm resize-none" placeholder="Let's talk about..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-3 rounded-xl bg-foreground text-background font-medium text-sm hover:bg-zinc-200 transition-colors mt-2">
-                            <span class="lang-en">Send Message</span>
-                            <span class="lang-ar">إرسال الرسالة</span>
-                        </button>
-                        </form>
-                </div>
-            </div>
-        </section>
+       <div class="max-w-xl mx-auto mt-12">
+    <form action="https://formspree.io/f/xbdqyrzg" method="POST" class="grid grid-cols-1 gap-y-6">
+        <div>
+            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+            <input type="email" name="email" required 
+                class="block w-full rounded-lg border-gray-700 bg-gray-900/50 text-white px-4 py-3 focus:border-blue-500 focus:ring-blue-500" 
+                placeholder="your@email.com">
+        </div>
 
-    </main>
+        <div>
+            <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+            <textarea name="message" rows="4" required 
+                class="block w-full rounded-lg border-gray-700 bg-gray-900/50 text-white px-4 py-3 focus:border-blue-500 focus:ring-blue-500" 
+                placeholder="Let's talk about your project..."></textarea>
+        </div>
 
-    <!-- Minimal Footer -->
+        <button type="submit" 
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 shadow-lg shadow-blue-500/20">
+            Send Message
+        </button>
+    </form>
+</div>    <!-- Minimal Footer -->
     <footer class="border-t border-border bg-surface mt-12 glass relative z-10">
         <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="text-center md:text-start">

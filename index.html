@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdullah Raad | AI Systems Architect & Full Stack Developer</title>
-    <meta name="description" content="Portfolio of Abdullah Raad: AI Systems Architect, Full Stack Developer, and English Trainer in Baghdad, Iraq.">
+    <meta name="description" content="Portfolio of Abdullah Raad: AI Systems Architect, Full Stack Developer, and English Trainer.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,6 +44,8 @@
         }
         .animate-antigravity { animation: antigravity 5s ease-in-out infinite; }
         .glass { background: rgba(9, 9, 11, 0.65); backdrop-filter: blur(12px); border: 1px solid rgba(39, 39, 42, 0.5); }
+        
+        .bento-card { @apply bg-surface border border-border p-8 rounded-3xl transition-all hover:border-muted animate-antigravity; }
     </style>
 </head>
 <body class="bg-background text-foreground antialiased selection:bg-accent selection:text-background">
@@ -54,6 +56,7 @@
             <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-muted">
                 <a href="#about" class="hover:text-foreground transition-colors"><span class="lang-en">About</span><span class="lang-ar">عني</span></a>
                 <a href="#projects" class="hover:text-foreground transition-colors"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a>
+                <a href="#skills" class="hover:text-foreground transition-colors"><span class="lang-en">Expertise</span><span class="lang-ar">الخبرات</span></a>
                 <a href="#contact" class="hover:text-foreground transition-colors"><span class="lang-en">Contact</span><span class="lang-ar">تواصل</span></a>
             </div>
             <button onclick="toggleLanguage()" class="text-xs font-semibold px-4 py-2 rounded-full border border-border bg-surface hover:bg-border transition-colors">
@@ -64,42 +67,106 @@
 
     <main class="max-w-6xl mx-auto px-6 pt-32 pb-24 space-y-32">
         
-        <section id="hero" class="relative pt-24 pb-16 flex flex-col items-center text-center min-h-[60vh] rounded-3xl border border-border bg-surface/30 px-8 group">
+        <section id="hero" class="relative pt-24 pb-16 flex flex-col items-center text-center min-h-[70vh] rounded-3xl border border-border bg-surface/30 px-8 group overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+                <div class="absolute top-0 left-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
+            </div>
             <div class="relative z-10 animate-antigravity">
                 <div class="inline-flex items-center gap-2 rounded-full border border-border px-4 py-1.5 text-xs text-muted mb-8 glass">
-                    <span class="lang-en">Baghdad, Iraq | Remote Worldwide</span>
-                    <span class="lang-ar">بغداد، العراق | متاح للعمل عن بعد</span>
+                    <span class="lang-en">Baghdad, Iraq | Open to Remote Worldwide</span>
+                    <span class="lang-ar">بغداد، العراق | متاح للعمل عن بعد عالمياً</span>
                 </div>
-                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <h1 class="text-5xl md:text-8xl font-bold tracking-tight mb-8">
                     <span class="lang-en">Abdullah Raad.</span>
                     <span class="lang-ar">عبد الله رعد.</span>
                 </h1>
-                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
                     <span class="lang-en">AI Systems Architect & Full Stack Developer bridging code and linguistics.</span>
                     <span class="lang-ar">مهندس نظم ذكاء اصطناعي ومطور شامل يجمع بين الكود واللغويات.</span>
                 </p>
             </div>
         </section>
 
-        <section id="projects" class="scroll-mt-24">
-            <h2 class="text-sm font-semibold uppercase tracking-widest text-accent mb-12">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-8 rounded-3xl bg-surface border border-border hover:border-accent transition-all animate-antigravity">
-                    <h3 class="text-2xl font-bold mb-4">Iraqi Dialect AI Chat</h3>
-                    <p class="text-muted mb-6">NLP agent for understanding Iraqi Arabic dialects.</p>
-                    <div class="flex gap-2"><span class="px-3 py-1 bg-background rounded-full text-xs border border-border">NLP</span></div>
+        <section id="about" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <h2 class="text-sm font-semibold uppercase tracking-widest text-accent mb-4">Summary</h2>
+                    <h3 class="text-3xl font-bold tracking-tight"><span class="lang-en">Engineering syntax and semantics.</span><span class="lang-ar">هندسة القواعد والدلالات اللغوية.</span></h3>
                 </div>
-                <div class="p-8 rounded-3xl bg-surface border border-border hover:border-accent transition-all animate-antigravity">
-                    <h3 class="text-2xl font-bold mb-4">Qiyafe Platform</h3>
-                    <p class="text-muted mb-6">Retail linkage platform connecting stores in Baghdad.</p>
-                    <div class="flex gap-2"><span class="px-3 py-1 bg-background rounded-full text-xs border border-border">SaaS</span></div>
+                <div class="lg:col-span-7 text-muted text-lg leading-relaxed">
+                    <p><span class="lang-en">I blend software engineering with advanced linguistics. My competitive advantage is applying translation theory and NLP to software development.</span>
+                    <span class="lang-ar">أقوم بدمج هندسة البرمجيات مع اللغويات المتقدمة. تكمن ميزتي التنافسية في تطبيق نظرية الترجمة و NLP في تطوير البرمجيات.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="scroll-mt-24">
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-accent mb-12">Technical Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 bg-surface border border-border p-8 rounded-3xl animate-antigravity">
+                    <span class="text-accent text-xs font-bold uppercase">NLP</span>
+                    <h3 class="text-3xl font-bold mt-4 mb-4">Iraqi Dialect AI Chat</h3>
+                    <p class="text-muted text-lg">Architected for understanding colloquial nuances using advanced AI workflows.</p>
+                </div>
+                <div class="bg-surface border border-border p-8 rounded-3xl animate-antigravity">
+                    <span class="text-orange-400 text-xs font-bold uppercase">Concurrency</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">Booking System</h3>
+                    <p class="text-muted">High-concurrency logic with Pessimistic Locking for data integrity.</p>
+                </div>
+                <div class="bg-surface border border-border p-8 rounded-3xl animate-antigravity">
+                    <span class="text-purple-400 text-xs font-bold uppercase">SaaS</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">Productivity Suite</h3>
+                    <p class="text-muted">Full-stack Kanban system with drag-and-drop functionality.</p>
+                </div>
+                <div class="bg-surface border border-border p-8 rounded-3xl animate-antigravity">
+                    <span class="text-emerald-400 text-xs font-bold uppercase">Management</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">School Tracker</h3>
+                    <p class="text-muted">Intuitive platform for educators to monitor academic performance.</p>
+                </div>
+                <div class="bg-surface border border-border p-8 rounded-3xl animate-antigravity">
+                    <span class="text-pink-400 text-xs font-bold uppercase">Workflows</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">AI Prompt Library</h3>
+                    <p class="text-muted">A curated repository of advanced engineering prompts for LLM development.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="scroll-mt-24">
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-accent mb-12">Skills Taxonomy</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-surface border border-border">
+                    <h4 class="font-bold mb-4">AI Development</h4>
+                    <ul class="text-sm text-muted space-y-2"><li>Lovable</li><li>Cursor</li><li>LLM Prompting</li></ul>
+                </div>
+                <div class="p-6 rounded-2xl bg-surface border border-border">
+                    <h4 class="font-bold mb-4">Architecture</h4>
+                    <ul class="text-sm text-muted space-y-2"><li>REST API</li><li>PostgreSQL</li><li>Concurrency Control</li></ul>
+                </div>
+                <div class="p-6 rounded-2xl bg-surface border border-border">
+                    <h4 class="font-bold mb-4">Linguistics</h4>
+                    <ul class="text-sm text-muted space-y-2"><li>Phonetics</li><li>NLP</li><li>Dialect Analysis</li></ul>
+                </div>
+                <div class="p-6 rounded-2xl bg-surface border border-border">
+                    <h4 class="font-bold mb-4">Tools</h4>
+                    <ul class="text-sm text-muted space-y-2"><li>Supabase</li><li>Vercel</li><li>Git / GitHub</li></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="linguistics" class="scroll-mt-24">
+            <div class="rounded-3xl border border-border glass p-8 md:p-16 animate-antigravity">
+                <h2 class="text-sm font-semibold uppercase tracking-widest text-accent mb-4">Linguistics & Services</h2>
+                <h3 class="text-3xl font-bold mb-8">American Accent Coach & Translator</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <p class="text-muted text-lg">Empowering non-native speakers to achieve fluency through phonetics-focused training.</p>
+                    <p class="text-muted text-lg">Building Language-Aware systems that bridge the gap between code and human semantics.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="scroll-mt-24 max-w-2xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4"><span class="lang-en">Get in Touch</span><span class="lang-ar">تواصل معي</span></h2>
-            <p class="text-muted mb-12"><span class="lang-en">Let's build something remarkable together.</span><span class="lang-ar">لنقم ببناء شيء استثنائي معاً.</span></p>
+            <h2 class="text-4xl font-bold mb-4"><span class="lang-en">Get in Touch</span><span class="lang-ar">تواصل معي</span></h2>
+            <p class="text-muted mb-12 text-lg"><span class="lang-en">Available for AI-driven SaaS architecture & NLP projects.</span><span class="lang-ar">متاح لمشاريع هندسة SaaS المعتمدة على الذكاء الاصطناعي.</span></p>
             
             <div class="glass p-8 rounded-3xl text-left" dir="ltr">
                 <form action="https://formspree.io/f/xbdqyrzg" method="POST" class="space-y-6">
